@@ -1,0 +1,31 @@
+\usepackage{fancyhdr}
+\usepackage[margin=1in,includeheadfoot,headheight=14.4pt,tmargin=14pt]{geometry}
+\usepackage{zref-totpages}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[parfill]{parskip}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{tocloft}
+\usepackage{float}
+\usepackage{array}
+\usepackage{relsize}
+
+\lstset{
+  language=C++,
+  basicstyle=\ttfamily,
+  keywordstyle=\color{blue}\ttfamily,
+  stringstyle=\color{red}\ttfamily,
+  commentstyle=\color{green}\ttfamily,
+  morecomment=[l][\color{magenta}]{\#}
+  frame=shadowbox
+}
+
+\pagestyle{fancy}
+\fancyhead[L]{ Fabian Schätzschock}
+\fancyhead[R]{\today}
+\fancyhead[C]{4BHELS}
+\fancyfoot[R]{\thepage/\the\numexpr\ztotpages-1\relax}
+\fancyfoot[C]{}
+
+\setlength{\footskip}{80pt}
