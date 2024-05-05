@@ -7,6 +7,9 @@
 # Don't ignore .gitignore
 !.gitignore
 
+# Don't ignore README.md
+!README.md
+
 # But don't ignore .tex, .pdf, or image files
 !*.tex
 !*.sty
