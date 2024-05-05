@@ -1,0 +1,18 @@
+# Ignore all files
+*
+ 
+# But don't ignore directories
+!*/
+
+# Don't ignore .gitignore
+!.gitignore
+
+# But don't ignore .tex, .pdf, or image files
+!*.tex
+!*.sty
+!*.pdf
+!*.jpg
+!*.png
+!*.gif
+!*.bmp
+!*.svg
