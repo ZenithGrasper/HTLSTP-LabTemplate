@@ -24,13 +24,12 @@ Extract the downloaded archive and run the installer script. This will guide you
 
 Open your terminal and run these commands:
 ```
-tar -xf install-tl-unx.tar.gz
 cd install-tl-20240505  # Replace with the actual directory name (check the folder name)
 sudo perl ./install-tl
 ```
 
 
-Follow the installer prompts and select "Install" to begin the download and installation process. This might take some time depending on your internet speed and the number of packages you choose.
+Follow the installer prompts and select "Install" to begin the download and installation process. This will take a lot of time as a lot of packages are beeing downloaded.
 
 *Set Environment Variables:*
 
@@ -56,7 +55,7 @@ Use sudo pacman to install additional packages needed for specific LaTeX feature
 In your terminal, run these commands:
 ```
 sudo pacman -S texlive-binextra  # For Latexmk
-sudo pacman -S texlive-latex    # For additional LaTeX packages (optional)
+sudo pacman -S texlive-latex    # For additional LaTeX packages
 ```
 
 The texlive-binextra package includes latexmk, a popular tool for compiling LaTeX documents. The texlive-latex package is needed for the template to work.
