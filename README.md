@@ -4,21 +4,19 @@ This guide gets you up and running with LaTeX Workshop in your favorite code edi
 
 *Prerequisites*
 
-    A running Arch Linux system
-    Basic familiarity with the terminal
+A running Arch Linux system
+Basic familiarity with the terminal
 
 *Installation*
 
-    Download TeX Live:
+Download TeX Live:
 
-    TeX Live is a comprehensive LaTeX distribution. We'll download the network installer script for a more flexible installation.
+TeX Live is a comprehensive LaTeX distribution. We'll download the network installer script for a more flexible installation.
 
-    In your terminal, run the following command:
-    ```
-    curl -LO https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
-	```
-
-    Verwende den Code mit Vorsicht.
+Simply paste the following into a search engine of your choice
+```
+https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+```
 
 *Install TeX Live:*
 
@@ -60,9 +58,8 @@ In your terminal, run these commands:
 sudo pacman -S texlive-binextra  # For Latexmk
 sudo pacman -S texlive-latex    # For additional LaTeX packages (optional)
 ```
-Verwende den Code mit Vorsicht.
 
-The texlive-binextra package includes latexmk, a popular tool for compiling LaTeX documents. The texlive-latex package is optional but provides a broader selection of LaTeX packages if needed.
+The texlive-binextra package includes latexmk, a popular tool for compiling LaTeX documents. The texlive-latex package is needed for the template to work.
 
 *Install LaTeX Workshop Extension:*
 
