@@ -54,8 +54,7 @@ Use sudo pacman to install additional packages needed for specific LaTeX feature
 
 In your terminal, run these commands:
 ```
-sudo pacman -S texlive-binextra  # For Latexmk
-sudo pacman -S texlive-latex    # For additional LaTeX packages
+sudo pacman -S texlive-binextra  texlive-latex texlive-langgerman # For german language and packages needed in the template
 ```
 
 The texlive-binextra package includes latexmk, a popular tool for compiling LaTeX documents. The texlive-latex package is needed for the template to work.
