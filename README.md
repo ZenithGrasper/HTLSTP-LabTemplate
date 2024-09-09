@@ -62,3 +62,18 @@ The texlive-binextra package includes latexmk, a popular tool for compiling LaTe
 *Install LaTeX Workshop Extension:*
 
 Open VS Code and navigate to the Extensions tab (Ctrl+Shift+X). Search for "LaTeX Workshop" and install the official extension by James Yu.
+
+
+## Install Latex Workshop on Windows
+
+   *1. Install Latex Workshop Extension in VScode*
+   
+  *2. Install MikTex*
+  
+    https://miktex.org/download
+    Install missing Packages on the fly? Yes
+    Do Updates in MikTex console
+    
+  *3. Install Pearl*
+  
+    https://strawberryperl.com/
