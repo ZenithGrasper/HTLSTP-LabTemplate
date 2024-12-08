@@ -13,9 +13,9 @@ Download TeX Live:
 
 TeX Live is a comprehensive LaTeX distribution. We'll download the network installer script for a more flexible installation.
 
-Simply paste the following into a search engine of your choice
+Simply run the following command
 ```
-https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
 ```
 
 *Install TeX Live:*
@@ -24,7 +24,7 @@ Extract the downloaded archive and run the installer script. This will guide you
 
 Open your terminal and run these commands:
 ```
-cd install-tl-20240505  # Replace with the actual directory name (check the folder name)
+cd install-tl-YYYYMMDD  # Replace with the actual directory name (check the folder name)
 sudo perl ./install-tl
 ```
 
@@ -33,7 +33,7 @@ Follow the installer prompts and select "Install" to begin the download and inst
 
 *Set Environment Variables:*
 
-Once the installation is complete, the installer will provide you with the necessary paths for PATH, MANPATH, and INFOPATH.  Add these paths to your shell configuration file (e.g., ~/.bashrc). Open your preferred text editor and append the following lines, replacing the placeholders with the actual paths provided by the installer:
+Once the installation is complete, the installer will provide you with the necessary paths for PATH, MANPATH, and INFOPATH.  Add these paths to your shell configuration file (e.g., ~/.bashrc). Open your preferred text editor and append the following lines, replacing the paths with the actual paths provided by the installer:
 
 ```
 export PATH=$PATH:/usr/local/texlive/2024/bin/x86_64-linux  # Replace with your actual path
@@ -54,7 +54,7 @@ Use sudo pacman to install additional packages needed for specific LaTeX feature
 
 In your terminal, run these commands:
 ```
-sudo pacman -S texlive-binextra  texlive-latex texlive-langgerman texlive-latexextra # For german language and packages needed in the template
+sudo pacman -S texlive-binextra  texlive-latex texlive-langgerman texlive-latexextra texlive-bibtexextra
 ```
 
 The texlive-binextra package includes latexmk, a popular tool for compiling LaTeX documents. The texlive-latex package is needed for the template to work.
